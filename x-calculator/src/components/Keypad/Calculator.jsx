@@ -13,7 +13,7 @@ const Calculator = () => {
       try {
         setResult(eval(input)); // Follows BODMAS
       } catch {
-        setResult("NaN");
+        setResult("Error");
       }
     } else if (value === "C") {
       setInput("");
