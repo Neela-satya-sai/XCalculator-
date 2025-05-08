@@ -11,7 +11,9 @@ const Calculator = () => {
   const handleClick = (value) => {
     if (value === "=") {
       try {
+       
         setResult(eval(input)); // Follows BODMAS
+        if(input=="") setResult("Error");
       } catch {
         setResult("Error");
       }
